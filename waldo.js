@@ -8,7 +8,7 @@
 
 function findWaldo(arr, found) {
   arr.forEach((element, index) => {
-    if (element === 'Waldo') {
+    if (element.includes('Waldo')) {
       found(index);
     }
   });
